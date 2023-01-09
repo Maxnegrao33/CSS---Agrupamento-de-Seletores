@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Maciel Oliveira" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trilha de CSS</title>
+
+    <style>
+      /*Exemplos de Aplicação de Agrupamento de seletores*/
+      .texto,
+      h1 {
+        color: black;
+      }
+
+      p.texto {
+        color: blueviolet;
+      }
+
+      h1,
+      [id^="botao"] {
+        background-color: lightgray;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Agrupamento de Seletores</h1>
+    <p class="texto">
+      Podemos aplicar as mesmas regras CSS para diversos seletores diferentes.
+      Para isso podemos separar os seletores por uma vírgula(,)
+    </p>
+
+    <div class="texto">
+      Assim, evitamos o Ctrl+C e Ctrl+V para os códigos, podemos fazer um só
+      bloco de CSS e reutilizar as mesmas regras
+    </div>
+
+    <br /><br />
+    <a id="link-referencia" href="#">Clique para ver a documentação</a>
+
+    <br /><br />
+    <a id="link-suporte" href="#">Clique para entrar enm contato</a>
+
+    <br /><br />
+    <a id="botao-voltar" href="#">Voltar</a>
+
+    <br /><br />
+    <button id="botao-fechar" href="#">Fechar página</button>
+  </body>
+</html>
